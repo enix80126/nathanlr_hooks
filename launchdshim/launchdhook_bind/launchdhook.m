@@ -517,6 +517,7 @@ __attribute__((constructor)) static void init(int argc, char **argv) {
         } else {
             bindfs("/private/var/jb/usr/lib/", "/System/Library/VideoCodecs/lib");
         }
+        bindfs("/private/var/jb/System/Library/Fonts", "/System/Library/Fonts");
         writeSandboxExtensionsToPlist();
         rebind_symbols(rebindings, 7);
     }
